@@ -6,21 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome lint ./src",
+    "format": "biome format --write ./src",
+    "format:check": "biome format --check ./src.",
+    "fix": "biome check --write ./src"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "15.3.5",
-    "@mui/material": "^5.15.0",
+    "@auth0/nextjs-auth0": "^4.8.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.15.0"
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
+    "next": "15.3.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "^5.3.3",
+    "@biomejs/biome": "^2.0.6",
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18"
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.3"
   }
 }

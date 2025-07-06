@@ -1,14 +1,12 @@
-'use client';
+'use client'
 
-import { ThemeProvider } from '@mui/material/styles';
-import { CssBaseline } from '@mui/material';
-import { CacheProvider } from '@emotion/react';
-import createCache from '@emotion/cache';
-import { createTheme } from '@mui/material/styles';
-import { useState } from 'react';
+import createCache from '@emotion/cache'
+import { CacheProvider } from '@emotion/react'
+import { CssBaseline } from '@mui/material'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 
-const cache = createCache({ key: 'css' });
-cache.compat = true;
+const cache = createCache({ key: 'css' })
+cache.compat = true
 
 const theme = createTheme({
   palette: {
@@ -67,7 +65,7 @@ const theme = createTheme({
       },
     },
   },
-});
+})
 
 export default function ThemeProviderComponent({ children }: { children: React.ReactNode }) {
   return (
@@ -77,5 +75,5 @@ export default function ThemeProviderComponent({ children }: { children: React.R
         {children}
       </ThemeProvider>
     </CacheProvider>
-  );
+  )
 }
