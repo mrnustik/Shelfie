@@ -15,11 +15,11 @@ export default function Home() {
           minHeight: '100vh',
         }}
       >
-        <Button 
-          component={Link} 
-          href="/auth/login" 
-          variant="contained" 
-          color="primary" 
+        <Button
+          component={Link}
+          href="/auth/login"
+          variant="contained"
+          color="primary"
           size="large"
         >
           Login
